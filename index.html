@@ -8,7 +8,7 @@
     <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-C1DvvBV_.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-DumFYO8Z.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-B238hxdN.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-BKjD5XZU.css">
   </head>
   <body>
     <header class="header">
@@ -33,21 +33,36 @@
 
 
     <main>
-      <form class="search-form">
-        <input
-          type="text"
-          name="search-text"
-          placeholder="Search images..."
-          autocomplete="off"
-        />
-        <button type="submit">Search</button>
-      </form>
+      <!doctype html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Image Search</title>
+          <link rel="stylesheet" href="./src/style.css" />
+        </head>
 
-      <ul class="gallery"></ul>
+        <body>
+          <form class="form">
+            <input
+              type="text"
+              name="search-text"
+              placeholder="Search images..."
+              autocomplete="off"
+            />
+            <button type="submit">Search</button>
+          </form>
 
-      <button class="load-more" type="button">Load more</button>
+          <ul class="gallery"></ul>
 
-      <span class="loader is-hidden"></span>
+          <button class="load-more is-hidden" type="button">Load more</button>
+
+          <span class="loader is-hidden"></span>
+        </body>
+      </html>
     </main>
 
     <footer class="footer">
