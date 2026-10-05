@@ -22,6 +22,28 @@ export function createGallery(images) {
               alt="${image.tags}"
             />
           </a>
+
+          <div class="gallery-info">
+            <div class="gallery-info-item">
+              <span class="gallery-info-title">Likes</span>
+              <span>${image.likes}</span>
+            </div>
+
+            <div class="gallery-info-item">
+              <span class="gallery-info-title">Views</span>
+              <span>${image.views}</span>
+            </div>
+
+            <div class="gallery-info-item">
+              <span class="gallery-info-title">Comments</span>
+              <span>${image.comments}</span>
+            </div>
+
+            <div class="gallery-info-item">
+              <span class="gallery-info-title">Downloads</span>
+              <span>${image.downloads}</span>
+            </div>
+          </div>
         </li>
       `;
     })
